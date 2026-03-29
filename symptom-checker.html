@@ -7,6 +7,61 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="disclaimer-bar">
+            ⚕ MediGuide is not a substitute for professional medical advice. Always consult a qualified doctor.
+        </div>
+        <nav>
+            <div class="logo">
+                <a href="index.html">MediGuide</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="symptom-checker.html">Symptom Checker</a></li>
+                <li><a href="appointment.html">Appointments</a></li>
+            </ul>
+        </nav>
 
+        <main class="checker-container">
+            <h1>Symptom Checker</h1>
+            <p class="diclaimer">This tool is not a substitute for professional medical advice. Please consult a doctor for proper diagnosis. </p>
+
+            <div class="symptoms-grid">
+                <label><input type="checkbox" value="fever">Fever</label>
+                <label><input type="checkbox" value="fever"> Fever</label>
+                <label><input type="checkbox" value="headache"> Headache</label>
+                <label><input type="checkbox" value="cough"> Cough</label>
+                <label><input type="checkbox" value="sore throat"> Sore Throat</label>
+                <label><input type="checkbox" value="nausea"> Nausea</label>
+                <label><input type="checkbox" value="vomiting"> Vomiting</label>
+                <label><input type="checkbox" value="fatigue"> Fatigue</label>
+                <label><input type="checkbox" value="shortness of breath"> Shortness of Breath</label>
+                <label><input type="checkbox" value="chest pain"> Chest Pain</label>
+                <label><input type="checkbox" value="abdominal pain"> Abdominal Pain</label>
+                <label><input type="checkbox" value="bloating"> Bloating</label>
+                <label><input type="checkbox" value="joint pain"> Joint Pain</label>
+                <label><input type="checkbox" value="skin rash"> Skin Rash</label>
+                <label><input type="checkbox" value="itching"> Itching</label>
+                <label><input type="checkbox" value="frequent urination"> Frequent Urination</label>
+                <label><input type="checkbox" value="excessive thirst"> Excessive Thirst</label>
+                <label><input type="checkbox" value="blurred vision"> Blurred Vision</label>
+                <label><input type="checkbox" value="sweating"> Sweating</label>
+                <label><input type="checkbox" value="weight changes"> Weight Changes</label>
+                <label><input type="checkbox" value="mood fluctuations"> Mood Fluctuations</label>
+                <label><input type="checkbox" value="anxiety"> Anxiety</label>
+                <label><input type="checkbox" value="sleep issues">Sleep Issues</label>
+                <label><input type="checkbox" value="stiffness">Stiffness</label>
+                <label><input type="checkbox" value="wheezing">Wheezing</label>
+                <label><input type="checkbox" value="sensitivity to light">Sensitivity to Light</label>
+            </div>
+
+            <button class="btn-primary" onclick="checkSymptoms()">Check Symptoms</button>
+
+            <div class="result" id="result"></div>
+        </main>
+        <footer>
+            <p>MediGuide &copy; 2026. This platform is not a substitute for professional medical advice.</p>
+        </footer>
+
+        <script src="symptom-checker.js"></script>
     </body>
 </html>

@@ -7,6 +7,68 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="disclaimer-bar">
+            ⚕ MediGuide is not a substitute for professional medical advice. Always consult a qualified doctor.
+        </div>
+        <nav>
+            <div class="logo">
+                <a href="index.html">MediGuide</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="symptom-checker.html">Symptom Checker</a></li>
+                <li><a href="appointment.html">Appointments</a></li>
+            </ul>
+        </nav>
 
+        <main class="appointment-container">
+            <div class="booking-section">
+                <h1>Book An Appointment</h1>
+                <p>Fill in the details below to book your appointment. Your record will be saved automatically.</p>
+
+                <div class="form-group">
+                    <label for="doctor-type">Specialist</label>
+                    <select id="doctor-type">
+                         <option value="">Select a specialist</option>
+                        <option value="Primary Care Physician">Primary Care Physician</option>
+                        <option value="Cardiologist">Cardiologist</option>
+                        <option value="Neurologist">Neurologist</option>
+                        <option value="Gastroenterologist">Gastroenterologist</option>
+                        <option value="Endocrinologist">Endocrinologist</option>
+                        <option value="Pulmonologist">Pulmonologist</option>
+                        <option value="Rheumatologist">Rheumatologist</option>
+                        <option value="Dermatologist">Dermatologist</option>
+                        <option value="Urologist">Urologist</option>
+                        <option value="Ophthalmologist">Ophthalmologist</option>
+                        <option value="Psychiatrist">Psychiatrist</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment-date">Appointment Date</label>
+                    <input type="date" id="appointment-date">
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Reason for Visit</label>
+                    <textarea id="reason" placeholder="Briefly describe your reason for the visit"></textarea>
+                </div>
+
+                <button class="btn-primary" onclick="bookAppointment()">Book Appointment</button>
+            </div>
+
+            <div class="history-section">
+                <h2>Medical History</h2>
+                <p>All your past appointments are saved here automatically. </p>
+                <div id="history-list"></div>
+                <button class="btn-secondary" onclick="clearHistory()">Clear History</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>MediGuide &copy; 2026. This platform is not a substitute for professional medical advice.</p>
+        </footer>
+
+        <script src="appointment.js"></script>
     </body>
 </html>
