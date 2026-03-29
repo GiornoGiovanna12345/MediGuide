@@ -24,10 +24,8 @@
 
         <main class="checker-container">
             <h1>Symptom Checker</h1>
-            <p class="diclaimer">This tool is not a substitute for professional medical advice. Please consult a doctor for proper diagnosis. </p>
-
+            <p class="disclaimer">This tool is not a substitute for professional medical advice. Please consult a doctor for proper diagnosis. </p>
             <div class="symptoms-grid">
-                <label><input type="checkbox" value="fever">Fever</label>
                 <label><input type="checkbox" value="fever"> Fever</label>
                 <label><input type="checkbox" value="headache"> Headache</label>
                 <label><input type="checkbox" value="cough"> Cough</label>
@@ -53,9 +51,12 @@
                 <label><input type="checkbox" value="stiffness">Stiffness</label>
                 <label><input type="checkbox" value="wheezing">Wheezing</label>
                 <label><input type="checkbox" value="sensitivity to light">Sensitivity to Light</label>
+                <label><input type="checkbox" value="back pain">Back Pain</label>
+                <label><input type="checkbox" value="dizziness">Dizziness</label>
+                <label><input type="checkbox" value="loss of appetite">Loss of Appetite</label>
             </div>
 
-            <button class="btn-primary" onclick="checkSymptoms()">Check Symptoms</button>
+            <button class="btn-symp" onclick="checkSymptoms()">Check Symptoms</button>
 
             <div class="result" id="result"></div>
         </main>
