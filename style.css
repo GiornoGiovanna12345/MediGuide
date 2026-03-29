@@ -274,7 +274,7 @@ footer {
     height: 16px;
 }
 
-.btn-symp{
+.btn-trial{
     background-color: var(--dark-green);
     color: var(--white);
     padding: 12px 30px;
@@ -287,7 +287,7 @@ footer {
     text-decoration: none;
 }
 
-.btn-symp:hover {
+.btn-trial:hover {
     background-color: var(--green);
     color: var(--white);
 }
@@ -309,4 +309,264 @@ footer {
 .result p {
     font-size: 1rem;
     line-height: 1.8;
+}
+
+/* Appointment Page */
+.appointment-container {
+    display: flex;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.booking-section {
+    flex: 1;
+}
+
+.booking-section h1 {
+    color: var(--dark-green);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.booking-section p {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--dark-green);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--light-green);
+    border-radius: 8px;
+    font-family: Georgia, serif;
+    font-size: 0.95rem;
+    background-color: var(--white);
+    color: var(--text);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--green);
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* History Section */
+.history-section {
+    flex: 1;
+}
+
+.history-section h2 {
+    color: var(--dark-green);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.history-section p {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+#history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.history-card {
+    background-color: var(--light-green);
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 5px solid var(--green);
+}
+
+.history-card h3 {
+    color: var(--dark-green);
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.history-card p {
+    font-size: 0.85rem;
+    color: var(--text);
+    margin: 0;
+}
+
+.btn-hist{
+    background-color: var(--white);
+    color: var(--dark-green);
+    padding: 10px 30px;
+    border: 2px solid var(--dark-green);
+    border-radius: 5px;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-hist:hover {
+    border:2px solid var(--dark-green);
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+/* Wellness Page */
+.wellness-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.wellness-container h1 {
+    color: var(--dark-green);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.wellness-container > p {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+}
+
+.wellness-form .form-group {
+    margin-bottom: 30px;
+}
+
+.wellness-form .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: var(--dark-green);
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+    background-color: var(--light-green);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid transparent;
+}
+
+.radio-group label:hover {
+    border: 2px solid var(--green);
+}
+
+.radio-group input[type="radio"] {
+    accent-color: var(--green);
+    display: inline;
+    width: auto;
+    margin: 0;
+}
+/* Wellness Result */
+.wellness-result {
+    margin-top: 50px;
+    display: none;
+}
+
+.score-bar-container {
+    background-color: var(--light-green);
+    border-radius: 50px;
+    height: 30px;
+    width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.score-bar {
+    height: 100%;
+    border-radius: 50px;
+    background-color: var(--green);
+    transition: width 1s ease;
+}
+
+.score-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--dark-green);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.score-rating {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.score-tips {
+    background-color: var(--light-green);
+    border-radius: 10px;
+    padding: 25px;
+    border-left: 5px solid var(--green);
+}
+
+.score-tips h3 {
+    color: var(--dark-green);
+    margin-bottom: 15px;
+}
+
+.score-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.score-tips ul li {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--light-green);
+    color: var(--text);
+}
+
+.score-tips ul li::before {
+    content: "→ ";
+    color: var(--green);
+    font-weight: bold;
+}
+
+.score-recommendation {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
 }

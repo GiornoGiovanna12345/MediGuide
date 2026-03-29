@@ -28,6 +28,16 @@
                 <p>Fill in the details below to book your appointment. Your record will be saved automatically.</p>
 
                 <div class="form-group">
+                    <label for="patient-name">Full Name</label>
+                    <input type="text" id="patient-name" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="patient-age">Age</label>
+                    <input type="number" id="patient-age" placeholder="Enter your age">
+                </div>
+
+                <div class="form-group">
                     <label for="doctor-type">Specialist</label>
                     <select id="doctor-type">
                          <option value="">Select a specialist</option>
@@ -55,14 +65,14 @@
                     <textarea id="reason" placeholder="Briefly describe your reason for the visit"></textarea>
                 </div>
 
-                <button class="btn-primary" onclick="bookAppointment()">Book Appointment</button>
+                <button class="btn-trial" onclick="bookAppointment()">Book Appointment</button>
             </div>
 
             <div class="history-section">
                 <h2>Medical History</h2>
                 <p>All your past appointments are saved here automatically. </p>
                 <div id="history-list"></div>
-                <button class="btn-secondary" onclick="clearHistory()">Clear History</button>
+                <button class="btn-hist" onclick="clearHistory()">Clear History</button>
             </div>
         </main>
 
