@@ -67,7 +67,7 @@ nav ul li a:hover {
 header {
     background-color: var(--dark-green);
     color: var(--white);
-    padding: 80px 40px;
+    padding: 50px 40px;
     text-align: center;
 }
 
@@ -80,7 +80,7 @@ header {
 .hero p {
     font-size: 1.1rem;
     margin-bottom: 40px;
-    color: var(--light-green);
+    color: #ffffff;
 }
 
 .hero-buttons {
@@ -199,4 +199,36 @@ header {
     75% { transform: translateX(-300%); }
     95% { transform: translateX(-300%); }
     100% { transform: translateX(0); }
+}
+
+.disclaimer-bar {
+    background-color: var(--dark-green);
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+}
+
+.carousel-track img:nth-child(1) {
+    object-position: center top;
+}
+
+.carousel-track img:nth-child(2) {
+    object-position: center center;
+}
+
+.carousel-track img:nth-child(3) {
+    object-position: center top;
+}
+
+.carousel-track img:nth-child(4) {
+    object-position: center center;
+}
+
+footer {
+    background-color: var(--dark-green);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 0.85rem;
 }
