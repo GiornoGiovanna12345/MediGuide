@@ -191,13 +191,15 @@ header {
 
 @keyframes slide {
     0% { transform: translateX(0); }
-    20% { transform: translateX(0); }
-    25% { transform: translateX(-100%); }
-    45% { transform: translateX(-100%); }
+    10% { transform: translateX(0); }
+    15% { transform: translateX(-100%); }
+    35% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
     50% { transform: translateX(-200%); }
-    70% { transform: translateX(-200%); }
-    75% { transform: translateX(-300%); }
-    95% { transform: translateX(-300%); }
+    55% { transform: translateX(-300%); }
+    65% { transform: translateX(-300%); }
+    70% { transform: translateX(-400%); }
+    85% { transform: translateX(-400%); }
     100% { transform: translateX(0); }
 }
 
