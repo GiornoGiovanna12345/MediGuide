@@ -180,7 +180,7 @@ header {
 .carousel-track {
     display: flex;
     height: 100%;
-    animation: slide 20s infinite linear;
+    animation: slide 25s infinite linear;
 }
 
 .carousel-track img {
@@ -191,15 +191,15 @@ header {
 
 @keyframes slide {
     0% { transform: translateX(0); }
-    10% { transform: translateX(0); }
-    15% { transform: translateX(-100%); }
+    15% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
     35% { transform: translateX(-100%); }
     40% { transform: translateX(-200%); }
-    50% { transform: translateX(-200%); }
-    55% { transform: translateX(-300%); }
-    65% { transform: translateX(-300%); }
-    70% { transform: translateX(-400%); }
-    85% { transform: translateX(-400%); }
+    55% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    75% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    95% { transform: translateX(-400%); }
     100% { transform: translateX(0); }
 }
 
