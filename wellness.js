@@ -72,10 +72,10 @@ function calculateWellness() {
     };
 
     const recommendationMap = {
-        good: { text: '✓ You are doing great! Keep up your healthy lifestyle.', color: '#2e7d32' },
-        better: { text: '→ You can do better. Small lifestyle changes will make a big difference.', color: '#f57c00' },
-        urgent: { text: '⚠ Your health needs urgent attention. Please consult a doctor soon.', color: '#c62828' }
-    };
+    good: { text: '✓ You are doing great! Keep up your healthy lifestyle.', color: '#2e7d32', colorLight: '#81c784' },
+    better: { text: '→ You can do better. Small lifestyle changes will make a big difference.', color: '#ea8e32', colorLight: '#ffc165' },
+    urgent: { text: '⚠ Your health needs urgent attention. Please consult a doctor soon.', color: '#c62828', colorLight: '#e35a5a' }
+};
 
     questions.forEach(q => {
         const selected = document.querySelector(`input[name="${q}"]:checked`);
@@ -96,6 +96,11 @@ function calculateWellness() {
         return;
     }
 
+    document.querySelector('.wellness-form').style.display = 'none';
+    document.querySelector('.wellness-container h1').style.display = 'none';
+    document.querySelector('.wellness-container > p').style.display = 'none';
+    document.querySelector('.btn-trial').style.display = 'none';
+
     const maxScore = questions.length * 6;
     const percentage = Math.round((totalScore / maxScore) * 100);
     const finalScore = Math.max(0, Math.min(100, percentage));
@@ -113,12 +118,14 @@ function calculateWellness() {
     }
 
     const resultDiv = document.getElementById('wellness-result');
-    resultDiv.style.display = 'block';
+    resultDiv.style.cssText = 'display: block !important; margin-top: 40px;';
     resultDiv.innerHTML = `
-        <div class="score-bar-container">
-            <div class="score-bar" id="score-bar" style="width: 0%"></div>
+        <div class="score-circle-outer" style="background: radial-gradient(circle at 30% 30%, ${recommendation.colorLight}, ${recommendation.color})">
+            <div class="score-circle-inner">
+                <div class="score-number" style="color: ${recommendation.color}">${finalScore}</div>
+                <div class="score-label">out of 100</div>
+            </div>
         </div>
-        <div class="score-number">${finalScore} / 100</div>
         <div class="score-rating" style="color: ${recommendation.color}">${rating}</div>
         <div class="score-tips">
             <h3>Your Personalised Tips</h3>
@@ -129,11 +136,10 @@ function calculateWellness() {
         <div class="score-recommendation" style="background-color: ${recommendation.color}; color: white; margin-top: 20px; padding: 15px; border-radius: 10px;">
             ${recommendation.text}
         </div>
+        <button class="btn-primary" onclick="location.reload()" style="margin-top: 20px;">
+            Retake Quiz
+        </button>
     `;
 
-    setTimeout(() => {
-        document.getElementById('score-bar').style.width = finalScore + '%';
-    }, 100);
-
-    resultDiv.scrollIntoView({ behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
