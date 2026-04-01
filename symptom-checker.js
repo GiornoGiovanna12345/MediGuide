@@ -119,4 +119,5 @@ function displayResult(result) {
             This is not a diagnosis. Please consult a ${result.doctor} for proper medical advice.
         </p>
     `;
+    resultDiv.scrollIntoView({ behavior: 'smooth' });
 }
