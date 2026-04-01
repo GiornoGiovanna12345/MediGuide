@@ -14,7 +14,6 @@ function calculateWellness() {
         },
         water: {
             bad: 'You are not drinking enough water — aim for at least 2-3 litres daily.',
-            okay: 'Your water intake is decent but try to increase it to 3 litres daily.'
         },
         vegetables: {
             bad: 'Your vegetable intake is very low — aim for at least 4 servings per day.',
@@ -26,7 +25,7 @@ function calculateWellness() {
         },
         protein: {
             bad: 'Your protein intake is low — include more lentils, eggs, chicken or dairy.',
-            okay: 'Your protein intake is moderate — try to increase it slightly.'
+            okay: 'Your protein intake is moderate — try to have more.'
         },
         sugar: {
             bad: 'Your sugar intake is high — cut down on sweets, sodas and processed foods.',
