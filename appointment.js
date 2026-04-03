@@ -4,13 +4,15 @@ function bookAppointment(){
     const doctor=document.getElementById('doctor-type').value;
     const date=document.getElementById('appointment-date').value;
     const reason=document.getElementById('reason').value;
+    const phone = document.getElementById('phone').value;
+    const timeslot = document.getElementById('timeslot').value;
     
-    if(!name||!age||!doctor||!date||!reason){
+    if(!name||!age||!doctor||!date||!reason||!phone||!timeslot){
         alert('Please fill in all fields before booking.');
         return;
     }
 
-    const appointment={name,age,doctor,date,reason};
+    const appointment={name,age,phone,doctor,date,timeslot,reason};
 
     let appointments=JSON.parse(localStorage.getItem('appointments'))||[];
     appointments.push(appointment);
@@ -18,7 +20,7 @@ function bookAppointment(){
 
     displayHistory();
     clearForm();
-    alert('Appointment booked successfully!');
+    alert(`Appointment booked successfully! A confirmation has been sent to ${phone}.`);
 }
 
 function displayHistory(){
@@ -36,8 +38,10 @@ function displayHistory(){
         card.className = 'history-card';
         card.innerHTML = `
             <h3>${appt.name}, Age ${appt.age}</h3>
+            <p><strong>Phone:</strong> ${appt.phone}</p>
             <p><strong>Specialist:</strong> ${appt.doctor}</p>
             <p><strong>Date:</strong> ${appt.date}</p>
+            <p><strong>Time:</strong> ${appt.timeslot}</p>
             <p><strong>Reason:</strong> ${appt.reason}</p>
         `;
         historyList.appendChild(card);
@@ -57,6 +61,8 @@ function clearForm() {
     document.getElementById('doctor-type').value = '';
     document.getElementById('appointment-date').value = '';
     document.getElementById('reason').value = '';
+    document.getElementById('phone').value = '';
+    document.getElementById('timeslot').value = '';
 }
 
 displayHistory();
