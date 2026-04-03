@@ -603,3 +603,62 @@ footer {
     font-size: 0.85rem;
     color: #888;
 }
+
+/* About Page */
+.about-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.about-hero {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.about-hero h1 {
+    color: var(--dark-green);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    color: #888;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.about-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 80px;
+}
+
+.about-section {
+    border-left: 5px solid var(--green);
+    padding: 30px 40px;
+    background-color: var(--light-green);
+    border-radius: 0 10px 10px 0;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.about-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-section h2 {
+    color: var(--dark-green);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--text);
+}
+
