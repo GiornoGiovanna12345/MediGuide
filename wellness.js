@@ -1,5 +1,6 @@
 function calculateWellness() {
-    const questions = ['sleep', 'water', 'vegetables', 'redmeat', 'protein', 'sugar', 'bp', 'sugar_level', 'exercise_type', 'exercise_freq', 'breathlessness', 'gut', 'headaches', 'stress', 'smoking', 'alcohol'];
+    const questions = ['sleep', 'water', 'vegetables', 'redmeat', 'protein', 'sugar', 'bp', 'sugar_level', 
+        'exercise_type', 'exercise_freq', 'breathlessness', 'gut', 'headaches', 'stress', 'smoking', 'alcohol'];
 
     let totalScore = 0;
     let tips = [];
