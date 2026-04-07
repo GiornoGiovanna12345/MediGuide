@@ -21,6 +21,7 @@ function bookAppointment(){
     displayHistory();
     clearForm();
     alert(`Appointment booked successfully! A confirmation has been sent to ${phone}.`);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function displayHistory(){
