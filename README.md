@@ -1,6 +1,7 @@
 # 🩺 MediGuide — E-Healthcare Advisor
 
 A web-based healthcare advisory platform built with HTML5, CSS3 and JavaScript.
+
 Live at: [MediGuide](https://giornogiovanna12345.github.io/MediGuide/)
 
 ---
@@ -11,8 +12,7 @@ MediGuide is a frontend healthcare advisory platform that helps users assess the
 book doctor appointments, track their medical history and evaluate their overall wellness —
 all without the need for a backend or database.
 
-Built as part of BCSE203E — Web Programming, Winter Semester 2025-2026,
-Vellore Institute of Technology, under the guidance of Dr. Kauser Ahmed P.
+Built as a capstone project for Web Programming. 
 
 ---
 
@@ -35,6 +35,7 @@ Vellore Institute of Technology, under the guidance of Dr. Kauser Ahmed P.
 ---
 
 ## 📁 Project Structure
+```
 MediGuide/
 ├── index.html
 ├── symptom-checker.html
@@ -47,11 +48,12 @@ MediGuide/
 ├── wellness.js
 ├── about.js
 └── images/
-├── slide1.jpg
-├── slide2.jpg
-├── slide3.jpg
-├── slide4.jpg
-└── slide5.jpg
+    ├── slide1.jpg
+    ├── slide2.jpg
+    ├── slide3.jpg
+    ├── slide4.jpg
+    └── slide5.jpg
+```
 
 ---
 
@@ -64,7 +66,7 @@ git clone https://github.com/GiornoGiovanna12345/MediGuide.git
 
 Or simply visit the live site: https://giornogiovanna12345.github.io/MediGuide/
 
-===
+---
 
 ## ⚠️ Disclaimer
 
