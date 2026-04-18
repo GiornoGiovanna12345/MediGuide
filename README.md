@@ -18,11 +18,11 @@ Built as a capstone project for Web Programming.
 
 ## ✨ Features
 
-- **Symptom Checker** — Select your symptoms and get an instant recommendation on which specialist to consult
-- **Appointment Booking** — Book appointments with a specialist and have your details saved automatically
-- **Medical History** — All past appointments are saved locally using localStorage and displayed on the page
-- **Wellness Score** — Answer a lifestyle questionnaire and receive a personalised wellness score out of 100 with improvement tips
-- **About Page** — Smooth scroll fade-in animations using IntersectionObserver API
+- ✅ **Symptom Checker** — Select your symptoms and get an instant recommendation on which specialist to consult
+- 🏥**Appointment Booking** — Book appointments with a specialist and have your details saved automatically
+- 📜**Medical History** — All past appointments are saved locally using localStorage and displayed on the page
+- 💯**Wellness Score** — Answer a lifestyle questionnaire and receive a personalised wellness score out of 100 with improvement tips
+- ❔**About Page** — Smooth scroll fade-in animations using IntersectionObserver API
 
 ---
 
